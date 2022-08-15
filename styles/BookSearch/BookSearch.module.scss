@@ -1,0 +1,51 @@
+.ParentContainer {
+    width: 50%;
+    margin: 0 auto;
+}
+.ContainerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .InputTitle {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        border: 0; // remove default border
+        border-bottom: 1px solid #eee; // add only bottom border
+        margin-left: 10px;
+    }
+    .SubmitBtn {
+        margin-left: 10px;
+        background-color: rgb(138, 212, 218);
+        border: 1px rgb(138, 212, 218) solid;
+        border-radius: 10px;
+        cursor: pointer;
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+.ResultContainer {
+    display: flex;
+    flex-direction: column;
+    .Result {
+        display: flex;
+        .Image {
+            width: 200px;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .title {
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
