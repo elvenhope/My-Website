@@ -15,26 +15,6 @@ export default function Header() {
                         <p>Space Picture of the Day</p>
                     </div>
                 </Link>
-                <Link href="/SpaceX">
-                    <div>
-                        <p>SpaceX Latest Launch</p>
-                    </div>
-                </Link>
-                <Link href="/NasaPicture">
-                    <div>
-                        <p>Picture of the Day</p>
-                    </div>
-                </Link>
-                <Link href="/NasaPicture">
-                    <div>
-                        <p>Picture of the Day</p>
-                    </div>
-                </Link>
-                <Link href="/NasaPicture">
-                    <div>
-                        <p>Picture of the Day</p>
-                    </div>
-                </Link>
             </div>
         </header>
     )
