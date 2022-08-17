@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import style from '../../styles/NasaPicture/NasaPicture.module.scss'
 import axios from "axios";
 
-export default function index() {
+export default function NasaPicture() {
     const [ImageLink, UpdateLink] = useState('');
     const [Data, updateData] = useState({})
     const [Loading, updateLoading] = useState(true)
