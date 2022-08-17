@@ -16,10 +16,10 @@ export default function BookImage({ IsbnGroup }) {
         let url = data[0];
         image.onload = function () {
             if (this.width > 10) {
-                console.log("image exists:" + url, this.width, this.width > 10)
+                //console.log("image exists:" + url, this.width, this.width > 10)
                 UpdateLink('https://covers.openlibrary.org/b/isbn/' + IsbnGroup[0] + '-M.jpg')
             } else {
-                console.log("Image doesn't exists:" + url, this.width, this.width > 10)
+                //console.log("Image doesn't exists:" + url, this.width, this.width > 10)
                 UpdateLink(NoImageLink)
             }
         }

@@ -15,8 +15,7 @@ export default function BookSearch() {
     function sendQuery() {
         const BookName = inputEl.current.value;
         setLoading(true)
-        axios.get("http://openlibrary.org/search.json?title=" + BookName).then((response) => {
-            console.log(response.data)
+        axios.get("https://openlibrary.org/search.json?title=" + BookName).then((response) => {
             setLoading(false)
             updateData(response.data)
         });
