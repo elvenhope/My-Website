@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div className='HeaderTitle'>
                 <Link href="/">
-                    <p>Dark's Website</p>
+                    <p>Dark&apos;s Website</p>
                 </Link>
             </div>
             <div className='NavBar'>
