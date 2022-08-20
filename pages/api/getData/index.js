@@ -2,7 +2,7 @@ import conn from '../../../lib/db'
 
 export default async (req, res) => {
     try {
-        const query = 'SELECT * FROM "Todos"."todolist"'
+        const query = 'SELECT * FROM "public"."todolist"'
         const result = await conn.query(
             query
         );
