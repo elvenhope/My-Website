@@ -28,8 +28,9 @@ export default function BookSearch() {
 
     return (
         <div className={style.ParentContainer}>
+            <p className={[style.InputTitle, style.MobileVersion].join(" ")}>Enter a book name:</p>
             <div className={style.ContainerDiv}>
-                <p className={style.InputTitle}>Enter a book name:</p>
+                <p className={[style.InputTitle, style.DesktopVersion].join(" ")}>Enter a book name:</p>
                 <input type='text' ref={inputEl} />
                 <div className={style.SubmitBtn} onClick={sendQuery}><p>Submit Query</p></div>
                 <div className={style.SubmitBtn} onClick={Clear}><p>Clear</p></div>

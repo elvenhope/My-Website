@@ -1,6 +1,7 @@
 .Image {
-    width: 200px;
-
+    width: 100%;
+    max-width: 135px;
+    
     .activeImage {
         width: 100%;
         height: auto;
