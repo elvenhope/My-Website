@@ -15,6 +15,11 @@ export default function Header() {
                         <p>Space Picture of the Day</p>
                     </div>
                 </Link>
+                <Link href="/TodoList">
+                    <div>
+                        <p>Public Board</p>
+                    </div>
+                </Link>
             </div>
         </header>
     )
