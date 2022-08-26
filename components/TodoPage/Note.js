@@ -1,11 +1,11 @@
 import React from 'react'
 import style from '../../styles/TodoList/Note.module.scss'
 
-export default function Note({data}) {
+export default function Note({data, order}) {
   return (
     <div className={style.Container}>
-        <p>{data.id}. </p>
-        <p>{data.Task}</p>
+        <p>{order + 1}. </p>
+        <p>{data.task}</p>
     </div>
   )
 }

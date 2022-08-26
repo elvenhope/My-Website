@@ -20,7 +20,6 @@ export default function TodoList() {
     async function SubmitNote() {
         const value = inputEl.current.value;
         inputEl.current.value = "";
-        console.log(value)
         let data = { Task: value }
         setLoading(true)
         let response = await axios.post('/api/sendData', data)
@@ -53,7 +52,7 @@ export default function TodoList() {
                     <div className={Loading ? style.loader : style.NotLoading}>
                         <div className={style.ldsellipsis}><div></div><div></div><div></div><div></div></div>
                     </div>
-                    {Notes.length > 0 ? Notes.map((Object, index) => <Note data={Object} key={index} />) : null}
+                    {Notes.length > 0 ? Notes.map((Object, index) => <Note data={Object} key={index} order={index} />) : null}
                 </div>
             </div>
         </Layout>

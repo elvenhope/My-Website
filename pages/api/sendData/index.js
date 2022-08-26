@@ -1,17 +1,12 @@
-import conn from '../../../lib/db'
+import { connectToDatabase } from "../../../lib/db";
 
 export default async (req, res) => {
-  try {
-    const query = 'INSERT INTO "public"."todolist" ("Task") VALUES($1)'
-    const values = [req.body.Task]
-    const result = await conn.query(
-      query,
-      values
-    );
-    res.status(200).json({success: true})
-  } catch (error) {
-    console.log(error);
-  }
+    const { db } = await connectToDatabase();
+    const coll = db.collection("tasksdata");
 
+    let response = await coll.insertOne({
+        task: req.body.Task
+    });
 
+    res.json(response);
 };
