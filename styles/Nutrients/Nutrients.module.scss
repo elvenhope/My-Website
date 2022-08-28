@@ -1,0 +1,134 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    p {
+        font-size: 30px;
+    }
+}
+
+.ContainerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        border: 0; // remove default border
+        border-bottom: 1px solid #eee; // add only bottom border
+        margin-left: 10px;
+    }
+
+    .SubmitBtn {
+        margin-left: 10px;
+        background-color: rgb(138, 212, 218);
+        border: 1px rgb(138, 212, 218) solid;
+        border-radius: 10px;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+
+.DesktopVersion {
+    display: block;
+    text-align: center;
+}
+
+.MobileVersion {
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .MobileVersion {
+        display: block;
+    }
+
+    .DesktopVersion {
+        display: none;
+    }
+
+    .ResultContainer {
+        width: unset;
+        margin: unset;
+    }
+}
+
+.loader {
+    margin: 0 auto;
+}
+
+.NotLoading {
+    display: none;
+}
+
+.ldsellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.ldsellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.ldsellipsis div:nth-child(1) {
+    left: 8px;
+    animation: ldsellipsis1 0.6s infinite;
+}
+
+.ldsellipsis div:nth-child(2) {
+    left: 8px;
+    animation: ldsellipsis2 0.6s infinite;
+}
+
+.ldsellipsis div:nth-child(3) {
+    left: 32px;
+    animation: ldsellipsis2 0.6s infinite;
+}
+
+.ldsellipsis div:nth-child(4) {
+    left: 56px;
+    animation: ldsellipsis3 0.6s infinite;
+}
+
+@keyframes ldsellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ldsellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes ldsellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}

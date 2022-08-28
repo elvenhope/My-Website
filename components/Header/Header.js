@@ -11,13 +11,18 @@ export default function Header() {
             </div>
             <div className='NavBar'>
                 <Link href="/NasaPicture">
-                    <div>
+                    <div className='HeaderObject'>
                         <p>Space Picture of the Day</p>
                     </div>
                 </Link>
                 <Link href="/TodoList">
-                    <div>
+                    <div className='HeaderObject'>
                         <p>Public Board</p>
+                    </div>
+                </Link>
+                <Link href="/Nutrients">
+                    <div className='HeaderObject'>
+                        <p>Nutrient Calculator</p>
                     </div>
                 </Link>
             </div>
